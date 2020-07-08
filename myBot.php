@@ -32,6 +32,9 @@
 		  'chat_id'      => $chatId,
 		  'caption'    => "Merci de nous avoir visiter, nous esperons vous revoir biento! Au revoir 👋",
 		  'photo' => "https://pbs.twimg.com/profile_images/939161800037355520/lvGNqhFT_400x400.jpg",
+		  'reply_markup'       => [
+			'inline_keyboard' => [[["text" => "Follow me", "url" => "http://github.com/lyabs243"]]],
+		  ],
 		);
 		
 		sendPost($url, $data);
