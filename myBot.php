@@ -26,11 +26,12 @@
 		sendPost($url, $data);
 	}
 	else if ($message == "❌ Quitter") {
-		$url = $path . '/sendmessage?';
+		$url = $path . '/sendPhoto?';
 		
 		$data = array(
 		  'chat_id'      => $chatId,
-		  'text'    => "Merci de nous avoir visiter, nous esperons vous revoir biento! Au revoir 👋",
+		  'caption'    => "Merci de nous avoir visiter, nous esperons vous revoir biento! Au revoir 👋",
+		  'photo' => "https://pbs.twimg.com/profile_images/939161800037355520/lvGNqhFT_400x400.jpg",
 		);
 		
 		sendPost($url, $data);
